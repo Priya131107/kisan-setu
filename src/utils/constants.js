@@ -1,7 +1,7 @@
 export const APP_NAME = "Kisan Setu";
-export const APP_NAME_HI = "à¤•à¤¿à¤¸à¤¾à¤¨ à¤¸à¥‡à¤¤à¥";
+export const APP_NAME_HI = "किसान सेतु";
 export const APP_TAGLINE = "Smart Procurement. Less Waiting. More Transparency.";
-export const APP_TAGLINE_HI = "à¤¸à¥à¤®à¤¾à¤°à¥à¤Ÿ à¤–à¤°à¥€à¤¦à¥¤ à¤•à¤® à¤ªà¥à¤°à¤¤à¥€à¤•à¥à¤·à¤¾à¥¤ à¤…à¤§à¤¿à¤• à¤ªà¤¾à¤°à¤¦à¤°à¥à¤¶à¤¿à¤¤à¤¾à¥¤";
+export const APP_TAGLINE_HI = "स्मार्ट खरीद। कम प्रतीक्षा। अधिक पारदर्शिता।";
 
 export const DEMO_OTP = "1234";
 export const DEMO_MOBILE = "9876543210";
@@ -20,24 +20,24 @@ export const STORAGE_KEYS = {
 };
 
 export const SLOT_TIMES = [
-  { id: "morning-1", label: "8:00 AM - 9:00 AM", labelHi: "à¤¸à¥à¤¬à¤¹ 8:00 - 9:00" },
-  { id: "morning-2", label: "9:00 AM - 10:00 AM", labelHi: "à¤¸à¥à¤¬à¤¹ 9:00 - 10:00" },
-  { id: "morning-3", label: "10:00 AM - 11:00 AM", labelHi: "à¤¸à¥à¤¬à¤¹ 10:00 - 11:00" },
-  { id: "morning-4", label: "11:00 AM - 12:00 PM", labelHi: "à¤¸à¥à¤¬à¤¹ 11:00 - à¤¦à¥‹à¤ªà¤¹à¤° 12:00" },
-  { id: "afternoon-1", label: "12:00 PM - 1:00 PM", labelHi: "à¤¦à¥‹à¤ªà¤¹à¤° 12:00 - 1:00" },
-  { id: "afternoon-2", label: "2:00 PM - 3:00 PM", labelHi: "à¤¦à¥‹à¤ªà¤¹à¤° 2:00 - 3:00" },
-  { id: "afternoon-3", label: "3:00 PM - 4:00 PM", labelHi: "à¤¦à¥‹à¤ªà¤¹à¤° 3:00 - 4:00" },
-  { id: "evening-1", label: "4:00 PM - 5:00 PM", labelHi: "à¤¶à¤¾à¤® 4:00 - 5:00" },
+  { id: "morning-1", label: "8:00 AM - 9:00 AM", labelHi: "सुबह 8:00 - 9:00" },
+  { id: "morning-2", label: "9:00 AM - 10:00 AM", labelHi: "सुबह 9:00 - 10:00" },
+  { id: "morning-3", label: "10:00 AM - 11:00 AM", labelHi: "सुबह 10:00 - 11:00" },
+  { id: "morning-4", label: "11:00 AM - 12:00 PM", labelHi: "सुबह 11:00 - दोपहर 12:00" },
+  { id: "afternoon-1", label: "12:00 PM - 1:00 PM", labelHi: "दोपहर 12:00 - 1:00" },
+  { id: "afternoon-2", label: "2:00 PM - 3:00 PM", labelHi: "दोपहर 2:00 - 3:00" },
+  { id: "afternoon-3", label: "3:00 PM - 4:00 PM", labelHi: "दोपहर 3:00 - 4:00" },
+  { id: "evening-1", label: "4:00 PM - 5:00 PM", labelHi: "शाम 4:00 - 5:00" },
 ];
 
 export const PROCUREMENT_STAGES = [
-  { id: "registered", label: "Registration", labelHi: "à¤ªà¤‚à¤œà¥€à¤•à¤°à¤£", icon: "ClipboardList" },
-  { id: "slot_allocated", label: "Slot Allocated", labelHi: "à¤¸à¥à¤²à¥‰à¤Ÿ à¤†à¤µà¤‚à¤Ÿà¤¿à¤¤", icon: "CalendarCheck" },
-  { id: "token_generated", label: "Token Generated", labelHi: "à¤Ÿà¥‹à¤•à¤¨ à¤œà¤¨à¤°à¥‡à¤Ÿ", icon: "Ticket" },
-  { id: "reached_centre", label: "Reached Centre", labelHi: "à¤•à¥‡à¤‚à¤¦à¥à¤° à¤ªà¤¹à¥à¤‚à¤šà¥‡", icon: "MapPin" },
-  { id: "quality_inspection", label: "Quality Inspection", labelHi: "à¤—à¥à¤£à¤µà¤¤à¥à¤¤à¤¾ à¤œà¤¾à¤‚à¤š", icon: "Search" },
-  { id: "weighing", label: "Weighing", labelHi: "à¤¤à¥Œà¤²", icon: "Scale" },
-  { id: "completed", label: "Completed", labelHi: "à¤ªà¥‚à¤°à¥à¤£", icon: "CheckCircle" },
+  { id: "registered", label: "Registration", labelHi: "पंजीकरण", icon: "ClipboardList" },
+  { id: "slot_allocated", label: "Slot Allocated", labelHi: "स्लॉट आवंटित", icon: "CalendarCheck" },
+  { id: "token_generated", label: "Token Generated", labelHi: "टोकन जारी", icon: "Ticket" },
+  { id: "reached_centre", label: "Reached Centre", labelHi: "केंद्र पर आगमन", icon: "MapPin" },
+  { id: "quality_inspection", label: "Quality Inspection", labelHi: "गुणवत्ता परीक्षण", icon: "Search" },
+  { id: "weighing", label: "Weighing", labelHi: "तौल", icon: "Scale" },
+  { id: "completed", label: "Completed", labelHi: "पूर्ण", icon: "CheckCircle" },
 ];
 
 export const STATUS_COLORS = {

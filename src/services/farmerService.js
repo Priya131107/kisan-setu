@@ -16,7 +16,7 @@ const farmerService = {
       farmer = {
         id: `farmer-${Date.now()}`,
         name: mobile === DEMO_FARMER.mobile ? DEMO_FARMER.name : "Farmer",
-        nameHi: mobile === DEMO_FARMER.mobile ? DEMO_FARMER.nameHi : "à¤•à¤¿à¤¸à¤¾à¤¨",
+        nameHi: mobile === DEMO_FARMER.mobile ? DEMO_FARMER.nameHi : "किसान",
         mobile,
         state: mobile === DEMO_FARMER.mobile ? DEMO_FARMER.state : "",
         district: mobile === DEMO_FARMER.mobile ? DEMO_FARMER.district : "",

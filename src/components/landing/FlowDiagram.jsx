@@ -3,13 +3,13 @@ import { User, Cpu, Ticket, ListOrdered, Search, Scale, CheckCircle, ArrowRight 
 import { useLanguage } from "../../hooks/useLanguage";
 
 const steps = [
-  { icon: User, label: "Farmer", labelHi: "à¤•à¤¿à¤¸à¤¾à¤¨", color: "bg-blue-500" },
-  { icon: Cpu, label: "Smart Slot", labelHi: "à¤¸à¥à¤®à¤¾à¤°à¥à¤Ÿ à¤¸à¥à¤²à¥‰à¤Ÿ", color: "bg-indigo-500" },
-  { icon: Ticket, label: "Token", labelHi: "à¤Ÿà¥‹à¤•à¤¨", color: "bg-purple-500" },
-  { icon: ListOrdered, label: "Live Queue", labelHi: "à¤²à¤¾à¤‡à¤µ à¤•à¤¤à¤¾à¤°", color: "bg-yellow-500" },
-  { icon: Search, label: "Inspection", labelHi: "à¤¨à¤¿à¤°à¥€à¤•à¥à¤·à¤£", color: "bg-orange-500" },
-  { icon: Scale, label: "Weighing", labelHi: "à¤¤à¥Œà¤²", color: "bg-cyan-500" },
-  { icon: CheckCircle, label: "Completed", labelHi: "à¤ªà¥‚à¤°à¥à¤£", color: "bg-green-500" },
+  { icon: User, label: "Farmer", labelHi: "किसान", color: "bg-blue-500" },
+  { icon: Cpu, label: "Smart Slot", labelHi: "स्मार्ट स्लॉट", color: "bg-indigo-500" },
+  { icon: Ticket, label: "Token", labelHi: "टोकन", color: "bg-purple-500" },
+  { icon: ListOrdered, label: "Live Queue", labelHi: "लाइव कतार", color: "bg-yellow-500" },
+  { icon: Search, label: "Inspection", labelHi: "निरीक्षण", color: "bg-orange-500" },
+  { icon: Scale, label: "Weighing", labelHi: "तौल", color: "bg-cyan-500" },
+  { icon: CheckCircle, label: "Completed", labelHi: "पूर्ण", color: "bg-green-500" },
 ];
 
 export default function FlowDiagram() {

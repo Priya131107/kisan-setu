@@ -18,11 +18,7 @@ export default function Hero() {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
         <div className="text-center max-w-4xl mx-auto">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full mb-8 border border-white/20">
-            <Sprout size={16} className="text-primary-300" />
-            <span className="text-sm font-medium text-primary-100">SIH 2026 â€” Smart Automation</span>
-          </div>
+          
 
           {/* Title */}
           <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
@@ -39,7 +35,7 @@ export default function Hero() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link to="/login">
-              <Button size="lg" className="bg-white text-primary-800 hover:bg-primary-50 shadow-xl min-w-[200px]" icon={Sprout}>
+              <Button size="lg" className="bg-primary-600 hover:bg-primary-500 text-white font-semibold border border-primary-400/40 shadow-xl min-w-[200px] hover:shadow-glow transition-all" icon={Sprout}>
                 {t.landing.farmerPortal}
               </Button>
             </Link>

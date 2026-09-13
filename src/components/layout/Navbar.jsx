@@ -51,7 +51,7 @@ export default function Navbar() {
             </div>
             <div>
               <span className="font-heading font-bold text-lg text-neutral-800">{t.appName}</span>
-              <span className="hidden sm:block text-[10px] text-neutral-400 -mt-1">à¤•à¤¿à¤¸à¤¾à¤¨ à¤¸à¥‡à¤¤à¥</span>
+              <span className="hidden sm:block text-[10px] text-neutral-400 -mt-1">स्मार्ट कृषि खरीद मंच</span>
             </div>
           </Link>
 
@@ -94,7 +94,7 @@ export default function Navbar() {
               className="flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-medium bg-primary-50 text-primary-700 hover:bg-primary-100 transition-colors"
             >
               <Globe size={14} />
-              {language === "en" ? "à¤¹à¤¿à¤‚à¤¦à¥€" : "EN"}
+              {language === "en" ? "हिंदी" : "English"}
             </button>
 
             {/* Auth Button */}

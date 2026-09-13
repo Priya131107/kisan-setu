@@ -3,10 +3,10 @@ import { Smartphone, CalendarCheck, Ticket, CheckCircle } from "lucide-react";
 import { useLanguage } from "../../hooks/useLanguage";
 
 const steps = [
-  { icon: Smartphone, title: "Register & Login", titleHi: "à¤°à¤œà¤¿à¤¸à¥à¤Ÿà¤° à¤•à¤°à¥‡à¤‚", desc: "Simple mobile number login with OTP verification.", num: "01" },
-  { icon: CalendarCheck, title: "Book a Slot", titleHi: "à¤¸à¥à¤²à¥‰à¤Ÿ à¤¬à¥à¤• à¤•à¤°à¥‡à¤‚", desc: "Choose your centre, crop, date, and time slot with smart recommendations.", num: "02" },
-  { icon: Ticket, title: "Get Token", titleHi: "à¤Ÿà¥‹à¤•à¤¨ à¤ªà¥à¤°à¤¾à¤ªà¥à¤¤ à¤•à¤°à¥‡à¤‚", desc: "Receive a unique token and track your queue position in real-time.", num: "03" },
-  { icon: CheckCircle, title: "Complete Process", titleHi: "à¤ªà¥à¤°à¤•à¥à¤°à¤¿à¤¯à¤¾ à¤ªà¥‚à¤°à¥à¤£ à¤•à¤°à¥‡à¤‚", desc: "Quality inspection, weighing, and payment â€” all tracked digitally.", num: "04" },
+  { icon: Smartphone, title: "Register & Login", titleHi: "रजिस्टर करें", desc: "Simple mobile number login with OTP verification.", num: "01" },
+  { icon: CalendarCheck, title: "Book a Slot", titleHi: "स्लॉट बुक करें", desc: "Choose your centre, crop, date, and time slot with smart recommendations.", num: "02" },
+  { icon: Ticket, title: "Get Token", titleHi: "टोकन प्राप्त करें", desc: "Receive a unique token and track your queue position in real-time.", num: "03" },
+  { icon: CheckCircle, title: "Complete Process", titleHi: "प्रक्रिया पूर्ण करें", desc: "Quality inspection, weighing, and payment - all tracked digitally.", num: "04" },
 ];
 
 export default function HowItWorks() {

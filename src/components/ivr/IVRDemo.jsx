@@ -228,7 +228,7 @@ export default function IVRDemo() {
               <CheckCircle2 size={16} />
             </div>
             <div className="text-xs text-amber-900 leading-relaxed">
-              <span className="font-semibold block mb-0.5">SIH 2026 Inclusion Feature: Voice Accessibility</span>
+              <span className="font-semibold block mb-0.5">Voice Accessibility Helpline</span>
               Over 35% of rural farmers operate feature phones without mobile internet. Kisan Setu's automated IVR integration delivers identical queue countdowns, moisture grading and token status via simple toll-free phone calls in regional languages.
             </div>
           </div>

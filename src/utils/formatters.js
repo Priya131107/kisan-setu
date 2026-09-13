@@ -23,12 +23,12 @@ export function formatDateTime(dateStr) {
 }
 
 export function formatWeight(kg) {
-  if (kg == null) return "â€”";
+  if (kg == null) return "-";
   return `${Number(kg).toFixed(2)} kg`;
 }
 
 export function formatPercentage(val) {
-  if (val == null) return "â€”";
+  if (val == null) return "-";
   return `${Number(val).toFixed(1)}%`;
 }
 

@@ -112,7 +112,7 @@ const slotService = {
     return {
       recommendedSlot: best,
       reason: `This slot has the lowest queue load (${best.bookedCount} farmers booked). Expected wait time: ~${(best.bookedCount + 1) * 5} minutes.`,
-      reasonHi: `à¤‡à¤¸ à¤¸à¥à¤²à¥‰à¤Ÿ à¤®à¥‡à¤‚ à¤¸à¤¬à¤¸à¥‡ à¤•à¤® à¤•à¤¤à¤¾à¤° à¤¹à¥ˆ (${best.bookedCount} à¤•à¤¿à¤¸à¤¾à¤¨ à¤¬à¥à¤•)à¥¤ à¤…à¤¨à¥à¤®à¤¾à¤¨à¤¿à¤¤ à¤ªà¥à¤°à¤¤à¥€à¤•à¥à¤·à¤¾ à¤¸à¤®à¤¯: ~${(best.bookedCount + 1) * 5} à¤®à¤¿à¤¨à¤Ÿà¥¤`,
+      reasonHi: `इस स्लॉट में सबसे कम कतार है (${best.bookedCount} किसान पंजीकृत)। अनुमानित प्रतीक्षा समय: ~${(best.bookedCount + 1) * 5} मिनट।`,
       confidence: Math.max(60, 95 - best.bookedCount * 5),
     };
   },

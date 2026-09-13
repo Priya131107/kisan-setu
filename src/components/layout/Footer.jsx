@@ -13,8 +13,8 @@ export default function Footer() {
             <span className="font-heading font-semibold text-white">Kisan Setu</span>
           </div>
           <div className="text-sm text-center">
-            <p>Team Code Crafters | Smart Innovation Hackathon 2026</p>
-            <p className="text-neutral-500">Problem Statement: SIH26032 | Theme: Smart Automation</p>
+            <p>Kisan Setu - Smart Agricultural Procurement Platform</p>
+            <p className="text-neutral-500">Less Waiting. More Transparency.</p>
           </div>
           <p className="text-xs text-neutral-500">&copy; {new Date().getFullYear()} Kisan Setu</p>
         </div>

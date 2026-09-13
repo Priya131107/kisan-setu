@@ -56,7 +56,7 @@ export default function BookingConfirmation({ booking, token }) {
           </div>
           <div className="flex items-center gap-3 text-sm">
             <Wheat size={16} className="text-neutral-400" />
-            <span className="text-neutral-600">{language === "hi" ? crop?.nameHi : crop?.name} â€” {booking.quantity} quintals</span>
+            <span className="text-neutral-600">{language === "hi" ? crop?.nameHi : crop?.name} - {booking.quantity} quintals</span>
           </div>
           <div className="flex items-center gap-3 text-sm">
             <Calendar size={16} className="text-neutral-400" />

@@ -79,9 +79,9 @@ export default function QualityInspection({ tokenId, onComplete }) {
           value={grade}
           onChange={(e) => setGrade(e.target.value)}
           options={[
-            { value: "A", label: "Grade A â€” Premium" },
-            { value: "B", label: "Grade B â€” Standard" },
-            { value: "C", label: "Grade C â€” Below Standard" },
+            { value: "A", label: "Grade A - Premium" },
+            { value: "B", label: "Grade B - Standard" },
+            { value: "C", label: "Grade C - Below Standard" },
           ]}
         />
       </div>

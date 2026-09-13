@@ -4,12 +4,12 @@ import Card from "../ui/Card";
 import { useLanguage } from "../../hooks/useLanguage";
 
 const benefits = [
-  { icon: Clock, title: "Reduced Wait Time", titleHi: "à¤•à¤® à¤ªà¥à¤°à¤¤à¥€à¤•à¥à¤·à¤¾ à¤¸à¤®à¤¯", desc: "Pre-booked slots eliminate hours of waiting at procurement centres.", color: "text-blue-600", bg: "bg-blue-100" },
-  { icon: Shield, title: "Full Transparency", titleHi: "à¤ªà¥‚à¤°à¥à¤£ à¤ªà¤¾à¤°à¤¦à¤°à¥à¤¶à¤¿à¤¤à¤¾", desc: "Real-time tracking of every step from registration to completion.", color: "text-green-600", bg: "bg-green-100" },
-  { icon: Smartphone, title: "Mobile First", titleHi: "à¤®à¥‹à¤¬à¤¾à¤‡à¤² à¤«à¤°à¥à¤¸à¥à¤Ÿ", desc: "Book slots, track queues, and get notifications on your phone.", color: "text-purple-600", bg: "bg-purple-100" },
-  { icon: BarChart3, title: "Data-Driven", titleHi: "à¤¡à¥‡à¤Ÿà¤¾-à¤¸à¤‚à¤šà¤¾à¤²à¤¿à¤¤", desc: "Analytics help centres optimize capacity and reduce bottlenecks.", color: "text-orange-600", bg: "bg-orange-100" },
-  { icon: Globe, title: "Multilingual", titleHi: "à¤¬à¤¹à¥à¤­à¤¾à¤·à¥€", desc: "Available in English and Hindi with IVR support for all farmers.", color: "text-cyan-600", bg: "bg-cyan-100" },
-  { icon: Zap, title: "Smart Automation", titleHi: "à¤¸à¥à¤®à¤¾à¤°à¥à¤Ÿ à¤‘à¤Ÿà¥‹à¤®à¥‡à¤¶à¤¨", desc: "AI-powered slot recommendations based on centre load and patterns.", color: "text-yellow-600", bg: "bg-yellow-100" },
+  { icon: Clock, title: "Reduced Wait Time", titleHi: "कम प्रतीक्षा समय", desc: "Pre-booked slots eliminate hours of waiting at procurement centres.", color: "text-blue-600", bg: "bg-blue-100" },
+  { icon: Shield, title: "Full Transparency", titleHi: "पूर्ण पारदर्शिता", desc: "Real-time tracking of every step from registration to completion.", color: "text-green-600", bg: "bg-green-100" },
+  { icon: Smartphone, title: "Mobile First", titleHi: "मोबाइल फर्स्ट", desc: "Book slots, track queues, and get notifications on your phone.", color: "text-purple-600", bg: "bg-purple-100" },
+  { icon: BarChart3, title: "Data-Driven", titleHi: "डेटा-संचालित", desc: "Analytics help centres optimize capacity and reduce bottlenecks.", color: "text-orange-600", bg: "bg-orange-100" },
+  { icon: Globe, title: "Multilingual", titleHi: "बहुभाषी", desc: "Available in English and Hindi with IVR support for all farmers.", color: "text-cyan-600", bg: "bg-cyan-100" },
+  { icon: Zap, title: "Smart Automation", titleHi: "स्मार्ट ऑटोमेशन", desc: "AI-powered slot recommendations based on centre load and patterns.", color: "text-yellow-600", bg: "bg-yellow-100" },
 ];
 
 export default function Benefits() {
