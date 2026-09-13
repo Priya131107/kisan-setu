@@ -4,6 +4,8 @@
 
 ---
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FPriya131107%2Fkisan-setu&project-name=kisan-setu)
+
 ## 🌾 Overview
 
 **Kisan Setu** is an intelligent agricultural procurement platform engineered to modernize mandi operations across India. By eliminating unorganized physical queues, introducing AI-assisted slot booking, accelerating certified quality inspections, and digitizing weighbridges, Kisan Setu reduces farmer waiting times from **4–8 hours down to under 25 minutes**.
