@@ -19,3 +19,10 @@ export function generateFarmerId(state) {
   const rand = Math.floor(Math.random() * 90000) + 10000;
   return `F-${stateCode}-${rand}`;
 }
+
+export function generateRegistrationId(state) {
+  const stateCode = STATE_CODES[state?.toLowerCase()] || "XX";
+  const year = new Date().getFullYear();
+  const rand = String(Math.floor(Math.random() * 90000) + 10000).padStart(5, "0");
+  return `KS-${stateCode}-${year}-${rand}`;
+}

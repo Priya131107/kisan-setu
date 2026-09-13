@@ -85,6 +85,79 @@ export default function FarmerDashboardPage() {
         </div>
       </div>
 
+      {/* Farmer Profile & My Crops */}
+      {farmer && (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {/* Profile Card */}
+          <Card className="p-6 border border-neutral-200">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-10 h-10 rounded-xl bg-primary-100 text-primary-700 flex items-center justify-center">
+                <Sprout size={20} />
+              </div>
+              <div>
+                <h3 className="font-heading font-semibold text-neutral-900 text-sm">Farmer Profile</h3>
+                <p className="text-xs text-neutral-500">Your registration details</p>
+              </div>
+            </div>
+            <div className="space-y-3">
+              <div className="flex justify-between items-center py-2 border-b border-neutral-50">
+                <span className="text-xs text-neutral-500">Farmer ID</span>
+                <span className="text-sm font-bold text-primary-700 font-mono">{farmer.farmerId || 'F-RJ-10001'}</span>
+              </div>
+              <div className="flex justify-between items-center py-2 border-b border-neutral-50">
+                <span className="text-xs text-neutral-500">Mobile</span>
+                <span className="text-sm font-medium text-neutral-800">{farmer.mobile}</span>
+              </div>
+              <div className="flex justify-between items-center py-2 border-b border-neutral-50">
+                <span className="text-xs text-neutral-500">State</span>
+                <span className="text-sm font-medium text-neutral-800 capitalize">{farmer.state || '—'}</span>
+              </div>
+              <div className="flex justify-between items-center py-2">
+                <span className="text-xs text-neutral-500">District</span>
+                <span className="text-sm font-medium text-neutral-800 capitalize">{farmer.district || '—'}</span>
+              </div>
+            </div>
+          </Card>
+
+          {/* My Crops Card */}
+          <Card className="p-6 border border-neutral-200">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center">
+                <ClipboardList size={20} />
+              </div>
+              <div>
+                <h3 className="font-heading font-semibold text-neutral-900 text-sm">My Crops</h3>
+                <p className="text-xs text-neutral-500">Registered crop details</p>
+              </div>
+            </div>
+            {farmer.crop ? (
+              <div className="space-y-3">
+                <div className="flex justify-between items-center py-2 border-b border-neutral-50">
+                  <span className="text-xs text-neutral-500">Crop</span>
+                  <span className="text-sm font-semibold text-neutral-800 capitalize">{farmer.crop}</span>
+                </div>
+                <div className="flex justify-between items-center py-2 border-b border-neutral-50">
+                  <span className="text-xs text-neutral-500">Expected Quantity</span>
+                  <span className="text-sm font-medium text-neutral-800">{farmer.expectedQuantity || '—'} {farmer.quantityUnit || 'Quintal'}</span>
+                </div>
+                <div className="flex justify-between items-center py-2 border-b border-neutral-50">
+                  <span className="text-xs text-neutral-500">Land Area</span>
+                  <span className="text-sm font-medium text-neutral-800">{farmer.landArea || '—'} {farmer.landUnit || ''}</span>
+                </div>
+                <div className="flex justify-between items-center py-2">
+                  <span className="text-xs text-neutral-500">Harvest Season</span>
+                  <span className="text-sm font-medium text-neutral-800 capitalize">{farmer.harvestSeason || '—'}</span>
+                </div>
+              </div>
+            ) : (
+              <div className="text-center py-6">
+                <p className="text-xs text-neutral-400">No crop registered yet. Book a slot to get started.</p>
+              </div>
+            )}
+          </Card>
+        </div>
+      )}
+
       {/* Active Upcoming Slot Card */}
       {upcomingSlot ? (
         <Card className="p-6 sm:p-8 border-2 border-primary-200 bg-gradient-to-b from-white to-primary-50/20 shadow-lg">
@@ -207,6 +280,16 @@ export default function FarmerDashboardPage() {
               </div>
               <h4 className="font-heading font-semibold text-neutral-900 text-sm">IVR Phone Demo</h4>
               <p className="text-xs text-neutral-500 mt-1">Non-smartphone voice portal</p>
+            </Card>
+          </Link>
+
+          <Link to="/notifications">
+            <Card className="p-5 hover:shadow-md transition-shadow group cursor-pointer border border-neutral-200">
+              <div className="w-10 h-10 rounded-xl bg-rose-100 text-rose-700 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                <Bell size={20} />
+              </div>
+              <h4 className="font-heading font-semibold text-neutral-900 text-sm">Notifications</h4>
+              <p className="text-xs text-neutral-500 mt-1">Alerts, updates & messages</p>
             </Card>
           </Link>
         </div>

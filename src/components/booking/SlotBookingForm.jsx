@@ -116,7 +116,7 @@ export default function SlotBookingForm({ onBookingComplete }) {
               id="crop"
               value={crop}
               onChange={(e) => setCrop(e.target.value)}
-              options={CROPS.map((c) => ({ value: c.id, label: `${language === "hi" ? c.nameHi : c.name} (MSP: â‚¹${c.msp}/q)` }))}
+              options={CROPS.map((c) => ({ value: c.id, label: `${language === "hi" ? c.nameHi : c.name} (MSP: ₹${c.msp}/q)` }))}
               required
             />
             <Input

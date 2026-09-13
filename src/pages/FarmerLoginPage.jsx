@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { Sprout, Phone, ShieldCheck, ArrowRight, Sparkles, CheckCircle2 } from 'lucide-react';
 import Card from '../components/ui/Card';
 import Input from '../components/ui/Input';
@@ -139,6 +139,22 @@ export default function FarmerLoginPage() {
         <div className="text-center text-xs text-neutral-500">
           No smartphone? Use our toll-free phone IVR at <b>1800-180-SETU</b>
         </div>
+
+        {/* Register Section */}
+        <Card className="p-6 border-2 border-dashed border-primary-300 bg-primary-50/30 text-center">
+          <Sprout size={28} className="mx-auto text-primary-600 mb-2" />
+          <h3 className="font-heading text-base font-bold text-neutral-900 mb-1">
+            {t.registration?.newFarmer || 'New Farmer? Register'}
+          </h3>
+          <p className="text-xs text-neutral-500 mb-4">
+            Create your account to access slot booking, procurement tracking, and MSP benefits.
+          </p>
+          <Link to="/register">
+            <Button size="lg" className="w-full" icon={ArrowRight}>
+              {t.registration?.registerAsFarmer || 'Register as Farmer'}
+            </Button>
+          </Link>
+        </Card>
       </div>
     </div>
   );

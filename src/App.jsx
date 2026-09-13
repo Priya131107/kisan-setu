@@ -10,6 +10,7 @@ import AdminLayout from './layouts/AdminLayout';
 // Pages
 import LandingPage from './pages/LandingPage';
 import FarmerLoginPage from './pages/FarmerLoginPage';
+import FarmerRegistrationPage from './pages/FarmerRegistrationPage';
 import FarmerDashboardPage from './pages/FarmerDashboardPage';
 import BookSlotPage from './pages/BookSlotPage';
 import BookingConfirmationPage from './pages/BookingConfirmationPage';
@@ -31,6 +32,7 @@ export default function App() {
             {/* Public Landing & Login */}
             <Route path="/" element={<LandingPage />} />
             <Route path="/login" element={<FarmerLoginPage />} />
+            <Route path="/register" element={<FarmerRegistrationPage />} />
 
             {/* Farmer Workspace Routes */}
             <Route element={<FarmerLayout />}>

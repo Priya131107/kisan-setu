@@ -1,9 +1,55 @@
 import storageService from "./storageService";
-import { STORAGE_KEYS, DEMO_OTP } from "../utils/constants";
+import { STORAGE_KEYS, DEMO_OTP, REGISTRATION_OTP } from "../utils/constants";
 import { DEMO_FARMER, SAMPLE_FARMERS } from "../data/demoData";
-import { generateFarmerId } from "../utils/tokenGenerator";
+import { generateFarmerId, generateRegistrationId } from "../utils/tokenGenerator";
 
 const farmerService = {
+  register(registrationData) {
+    const { mobile, fullName, fatherName, dob, state, district, block, village, aadhaar,
+            landArea, landUnit, landType, crop, expectedQuantity, quantityUnit, harvestSeason,
+            accountHolderName, bankName, accountNumber, ifscCode } = registrationData;
+
+    const farmerId = generateRegistrationId(state);
+
+    const farmer = {
+      id: `farmer-${Date.now()}`,
+      name: fullName,
+      nameHi: fullName,
+      mobile,
+      fatherName,
+      dob,
+      state: state.toLowerCase(),
+      district: district.toLowerCase(),
+      block,
+      village,
+      aadhaar,
+      centre: "",
+      farmerId,
+      landArea,
+      landUnit,
+      landType,
+      crop,
+      expectedQuantity,
+      quantityUnit,
+      harvestSeason,
+      bankDetails: {
+        accountHolderName,
+        bankName,
+        accountNumber,
+        ifscCode,
+      },
+      registeredViaFlow: true,
+      createdAt: new Date().toISOString(),
+    };
+
+    let farmers = storageService.get(STORAGE_KEYS.FARMERS) || [];
+    farmers.push(farmer);
+    storageService.set(STORAGE_KEYS.FARMERS, farmers);
+    storageService.set(STORAGE_KEYS.CURRENT_FARMER, farmer);
+
+    return { success: true, farmer };
+  },
+
   login(mobile, otp) {
     if (otp !== DEMO_OTP) {
       return { success: false, error: "Invalid OTP" };

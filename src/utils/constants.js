@@ -4,6 +4,7 @@ export const APP_TAGLINE = "Smart Procurement. Less Waiting. More Transparency."
 export const APP_TAGLINE_HI = "स्मार्ट खरीद। कम प्रतीक्षा। अधिक पारदर्शिता।";
 
 export const DEMO_OTP = "1234";
+export const REGISTRATION_OTP = "123456";
 export const DEMO_MOBILE = "9876543210";
 
 export const STORAGE_KEYS = {
